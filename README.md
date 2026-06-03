@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Voice / Audio Annotation Portfolio
 
 A local audio annotation tool built with Python and Streamlit, demonstrating a complete professional speech data labeling workflow. Built as a portfolio project targeting **AI Data Annotation**, **Speech Data Labeling**, and **AI Trainer** roles.
@@ -288,3 +289,7 @@ The schema is also defined as JSON Schema draft-07 at `data/schema/annotation_sc
 
 > **Note:** `examples/sample_annotation.json` contains one intentional format error
 > (`"speaker": "speaker1"` instead of `"SPEAKER_02"`) to demonstrate QA detection capability.
+=======
+# voice-audio-annotation-portfolio
+Portfolio-grade speech/audio annotation tool built with Python and Streamlit.
+>>>>>>> 8d52933b66f8013cbaa35dcebfeba5bbb90f7f91
