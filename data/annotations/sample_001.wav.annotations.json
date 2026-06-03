@@ -1,0 +1,38 @@
+{
+  "audio_id": "sample_001.wav",
+  "annotations": [
+    {
+      "start_time": 0.5,
+      "end_time": 3.2,
+      "speaker": "SPEAKER_01",
+      "transcript": "你好，我想查询一下我的订单状态。",
+      "intent": "question",
+      "emotion": "neutral",
+      "noise_type": "none",
+      "quality_flag": "good",
+      "notes": ""
+    },
+    {
+      "start_time": 3.5,
+      "end_time": 6.8,
+      "speaker": "speaker1",
+      "transcript": "好的，请提供您的订单号。",
+      "intent": "request",
+      "emotion": "neutral",
+      "noise_type": "none",
+      "quality_flag": "good",
+      "notes": "INTENTIONAL ERROR: speaker should be SPEAKER_02. Included to demonstrate qa_report.py detection."
+    },
+    {
+      "start_time": 7.0,
+      "end_time": 10.5,
+      "speaker": "SPEAKER_01",
+      "transcript": "我的订单号是 1234567890，请帮我查一下。",
+      "intent": "confirmation",
+      "emotion": "neutral",
+      "noise_type": "background_noise",
+      "quality_flag": "fair",
+      "notes": "Slight background noise audible throughout segment."
+    }
+  ]
+}

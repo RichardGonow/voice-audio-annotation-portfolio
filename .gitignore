@@ -1,0 +1,13 @@
+voice-data/
+data_set/audio_files/
+
+*.wav
+*.mp3
+*.m4a
+*.flac
+
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env

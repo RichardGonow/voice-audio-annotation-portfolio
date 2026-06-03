@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "VoiceAnnotationFile",
+  "description": "Top-level schema for a voice/audio annotation export file",
+  "type": "object",
+  "required": ["audio_id", "annotations"],
+  "properties": {
+    "audio_id": {
+      "type": "string",
+      "description": "Filename or unique identifier of the source audio file (e.g. sample_001.wav)"
+    },
+    "annotations": {
+      "type": "array",
+      "description": "Ordered list of annotation segments for this audio file",
+      "items": {
+        "$ref": "#/definitions/Annotation"
+      }
+    }
+  },
+  "definitions": {
+    "Annotation": {
+      "type": "object",
+      "required": [
+        "start_time", "end_time", "speaker", "transcript",
+        "intent", "emotion", "noise_type", "quality_flag"
+      ],
+      "properties": {
+        "start_time": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Segment start time in seconds (2 decimal places). Must be < end_time."
+        },
+        "end_time": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Segment end time in seconds (2 decimal places). Must be > start_time."
+        },
+        "speaker": {
+          "type": "string",
+          "pattern": "^SPEAKER_\\d{2}$",
+          "description": "Speaker identifier. Format: SPEAKER_XX where XX is a zero-padded two-digit number (e.g. SPEAKER_01)."
+        },
+        "transcript": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Verbatim transcription of the spoken content. Must not be empty. Use [INAUDIBLE] for unintelligible speech."
+        },
+        "intent": {
+          "type": "string",
+          "enum": ["greeting", "question", "request", "complaint", "confirmation", "small_talk", "other"],
+          "description": "Communicative intent of the utterance. Choose the most dominant intent."
+        },
+        "emotion": {
+          "type": "string",
+          "enum": ["neutral", "happy", "angry", "sad", "anxious", "confused", "other"],
+          "description": "Perceived emotional tone of the speaker (not the topic). Default to neutral when ambiguous."
+        },
+        "noise_type": {
+          "type": "string",
+          "enum": ["none", "background_noise", "music", "overlapping_speech", "low_volume", "unclear", "other"],
+          "description": "Dominant background noise type during this segment. Use 'none' for clean recordings."
+        },
+        "quality_flag": {
+          "type": "string",
+          "enum": ["good", "fair", "poor", "unusable"],
+          "description": "Overall usability rating of the segment for AI training."
+        },
+        "notes": {
+          "type": "string",
+          "description": "Optional free-text for annotator comments, edge cases, or ambiguities."
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
