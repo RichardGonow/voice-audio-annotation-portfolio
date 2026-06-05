@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Voice / Audio Annotation Portfolio
 
 A local audio annotation tool built with Python and Streamlit, demonstrating a complete professional speech data labeling workflow. Built as a portfolio project targeting **AI Data Annotation**, **Speech Data Labeling**, and **AI Trainer** roles.
