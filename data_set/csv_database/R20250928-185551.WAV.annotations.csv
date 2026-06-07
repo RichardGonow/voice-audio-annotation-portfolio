@@ -1,0 +1,5 @@
+﻿audio_id,start_time,end_time,speaker,transcript,intent,emotion,noise_type,quality_flag,notes,accent_region,dialect_label,speech_clarity,background_noise_level,recording_quality,speaking_rate,intonation,speech_energy,disfluency_present,disfluency_type,overlap_speech,annotation_confidence,decision_note
+R20250928-185551.WAV,1.0,46.0,,"大家好，我是朱浩，来自湖南。今天想和大家聊聊读书的美好。读书就像和古今圣贤对话，让我们在平凡的日子里看到更大的世界。从小到大，我最享受的就是捧着一本书，用家乡方言轻轻念出那些优美的句子，那种感觉特别亲切又宁静。
+读书不仅能增长知识，更能滋养心灵。遇到困难时，一本好书总能给我力量和启发。希望大家无论多忙，都能留一点时间给阅读，用最自在的方言和书中的人物交流，一起成长。
+书香为伴，人生更美。让读书成为我们一生的好习惯！
+谢谢大家！",greeting,neutral,none,good,,湖南,mandarin,clear,none,good,normal,rising,medium,no,none,no,4,

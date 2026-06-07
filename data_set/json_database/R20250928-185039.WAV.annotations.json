@@ -1,0 +1,29 @@
+{
+  "audio_id": "R20250928-185039.WAV",
+  "annotations": [
+    {
+      "start_time": 1.0,
+      "end_time": 47.0,
+      "speaker": "",
+      "transcript": "大家好，我是朱浩，来自湖南。今天想和大家聊聊梦想的力量。每个人心里都藏着一个梦想，它像家乡山顶的那轮朝阳，照亮我们前行的路。曾经我也会迷茫，但每次用家乡方言对自己说一句“坚持住”，就又有了继续奔跑的勇气。\n追梦的路上难免有荆棘，但正因为有梦，我们才学会成长、学会坚强。无论年龄多大，都不要放弃那个最初的自己。希望大家勇敢去追梦，用最亲切的口音大声告诉世界：“我的梦想，我来实现！”\n梦想不分大小，只要用心，它终会开花结果。\n谢谢大家！",
+      "intent": "greeting",
+      "emotion": "neutral",
+      "noise_type": "none",
+      "quality_flag": "good",
+      "notes": "",
+      "accent_region": "middle_mandarin",
+      "dialect_label": "mandarin",
+      "speech_clarity": "mostly_clear",
+      "background_noise_level": "none",
+      "recording_quality": "acceptable",
+      "speaking_rate": "normal",
+      "intonation": "flat",
+      "speech_energy": "medium",
+      "disfluency_present": "no",
+      "disfluency_type": "none",
+      "overlap_speech": "no",
+      "annotation_confidence": 3,
+      "decision_note": ""
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "audio_id": "R20250928-184251.WAV",
+  "annotations": [
+    {
+      "start_time": 1.0,
+      "end_time": 49.0,
+      "speaker": "",
+      "transcript": "大家好，我是朱浩，一个来自湖南的普通人。今天想和大家聊聊朋友的珍贵。人生路上，朋友就像家乡那条老街，无论刮风下雨，总在那里等着你。开心时一起用方言大笑，难过时一句家乡话就能暖心。\n我最感谢那些陪我走过风风雨雨的朋友们，不用多言，一个眼神、一个电话，就知道彼此在。真正的友情不是天天见面，而是无论多久不见，再聚时依然像从前一样自在。\n希望大家珍惜身边的朋友，多用最亲切的口音说一句“有你真好”，让友情一直温暖下去。\n谢谢大家！",
+      "intent": "greeting",
+      "emotion": "neutral",
+      "noise_type": "none",
+      "quality_flag": "good",
+      "notes": "",
+      "accent_region": "湖南",
+      "dialect_label": "mandarin",
+      "speech_clarity": "clear",
+      "background_noise_level": "none",
+      "recording_quality": "good",
+      "speaking_rate": "normal",
+      "intonation": "variable",
+      "speech_energy": "medium",
+      "disfluency_present": "no",
+      "disfluency_type": "none",
+      "overlap_speech": "no",
+      "annotation_confidence": 4,
+      "decision_note": ""
+    }
+  ]
+}

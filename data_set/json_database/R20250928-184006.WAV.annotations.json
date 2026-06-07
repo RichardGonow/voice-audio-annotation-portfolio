@@ -1,0 +1,29 @@
+{
+  "audio_id": "R20250928-184006.WAV",
+  "annotations": [
+    {
+      "start_time": 1.0,
+      "end_time": 47.0,
+      "speaker": "",
+      "transcript": "大家好，我是朱浩，一个爱吃会吃的湖南人。今天想跟大家聊聊美食的魅力。一方水土养一方人，我们家乡的美食总是带着最熟悉的味道：热腾腾的米粉、香喷喷的酸笋炒肉，还有奶奶做的那个招牌菜，每一口都让我想起小时候的幸福。\n忙碌的时候，我最喜欢用家乡话跟朋友边吃边聊，边夸“真香啊”！美食不只是填饱肚子，更是连接亲情、乡愁和快乐的桥梁。希望大家也多去发现身边的美味，用心品尝生活里的小确幸。\n谢谢大家！",
+      "intent": "greeting",
+      "emotion": "neutral",
+      "noise_type": "none",
+      "quality_flag": "good",
+      "notes": "",
+      "accent_region": "middle_mandarin",
+      "dialect_label": "mandarin",
+      "speech_clarity": "partially_unclear",
+      "background_noise_level": "none",
+      "recording_quality": "acceptable",
+      "speaking_rate": "normal",
+      "intonation": "variable",
+      "speech_energy": "medium",
+      "disfluency_present": "no",
+      "disfluency_type": "none",
+      "overlap_speech": "no",
+      "annotation_confidence": 3,
+      "decision_note": ""
+    }
+  ]
+}

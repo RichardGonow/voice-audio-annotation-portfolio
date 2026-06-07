@@ -1,0 +1,5 @@
+﻿audio_id,start_time,end_time,speaker,transcript,intent,emotion,noise_type,quality_flag,notes,accent_region,dialect_label,speech_clarity,background_noise_level,recording_quality,speaking_rate,intonation,speech_energy,disfluency_present,disfluency_type,overlap_speech,annotation_confidence,decision_note
+R20250928-185219.WAV,3.0,53.0,,"大家好，我是朱浩，来自湖南。今天想和大家聊聊文化的魅力。文化就像一条深深的根，把我们和家乡紧紧连在一起。家乡的方言、传统的民俗、古老的歌谣，还有那些代代相传的手工艺，每一样都承载着先人的智慧和故事。
+我最喜欢用家乡话和长辈们交流，那些带着泥土气息的表达，总能让我感受到文化的温度和力量。在快节奏的生活里，保留一份对传统文化的热爱，就是守护我们共同的记忆。希望大家多去了解和传承自己的文化，让家乡的味道、声音和精神，一直流传下去。
+文化，是我们最宝贵的财富。
+谢谢大家！",greeting,neutral,none,good,,middle_mandarin,mandarin,clear,none,good,normal,variable,medium,no,none,no,4,

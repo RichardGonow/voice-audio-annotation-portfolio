@@ -1,0 +1,29 @@
+{
+  "audio_id": "R20250928-185551.WAV",
+  "annotations": [
+    {
+      "start_time": 1.0,
+      "end_time": 46.0,
+      "speaker": "",
+      "transcript": "大家好，我是朱浩，来自湖南。今天想和大家聊聊读书的美好。读书就像和古今圣贤对话，让我们在平凡的日子里看到更大的世界。从小到大，我最享受的就是捧着一本书，用家乡方言轻轻念出那些优美的句子，那种感觉特别亲切又宁静。\n读书不仅能增长知识，更能滋养心灵。遇到困难时，一本好书总能给我力量和启发。希望大家无论多忙，都能留一点时间给阅读，用最自在的方言和书中的人物交流，一起成长。\n书香为伴，人生更美。让读书成为我们一生的好习惯！\n谢谢大家！",
+      "intent": "greeting",
+      "emotion": "neutral",
+      "noise_type": "none",
+      "quality_flag": "good",
+      "notes": "",
+      "accent_region": "湖南",
+      "dialect_label": "mandarin",
+      "speech_clarity": "clear",
+      "background_noise_level": "none",
+      "recording_quality": "good",
+      "speaking_rate": "normal",
+      "intonation": "rising",
+      "speech_energy": "medium",
+      "disfluency_present": "no",
+      "disfluency_type": "none",
+      "overlap_speech": "no",
+      "annotation_confidence": 4,
+      "decision_note": ""
+    }
+  ]
+}

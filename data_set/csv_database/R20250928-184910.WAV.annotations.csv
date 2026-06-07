@@ -1,0 +1,5 @@
+﻿audio_id,start_time,end_time,speaker,transcript,intent,emotion,noise_type,quality_flag,notes,accent_region,dialect_label,speech_clarity,background_noise_level,recording_quality,speaking_rate,intonation,speech_energy,disfluency_present,disfluency_type,overlap_speech,annotation_confidence,decision_note
+R20250928-184910.WAV,1.0,51.0,,"大家好，我是朱浩，来自湖南。今天想和大家聊聊旅游的快乐。旅行就像打开一扇窗，让我们看到不一样的世界。背上行囊，走向青山绿水，或是热闹的城市街巷，每一次出发都充满期待。我最喜欢在旅途中，用家乡方言和当地人聊天，那亲切的口音常常拉近距离，换来温暖的笑容。
+旅游不只是看风景，更是感受不同的人生。累了就想想家乡的味道，开心了就用最自在的方言大喊一声“真美啊”！希望大家多出去走走，用脚步丈量世界，用心收藏美好。
+愿我们的人生，都能成为一场精彩的旅行！
+谢谢大家！",greeting,neutral,none,good,,middle_mandarin,邵阳话,mostly_clear,none,acceptable,normal,variable,medium,no,none,no,4,

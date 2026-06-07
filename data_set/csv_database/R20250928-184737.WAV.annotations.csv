@@ -1,0 +1,5 @@
+﻿audio_id,start_time,end_time,speaker,transcript,intent,emotion,noise_type,quality_flag,notes,accent_region,dialect_label,speech_clarity,background_noise_level,recording_quality,speaking_rate,intonation,speech_energy,disfluency_present,disfluency_type,overlap_speech,annotation_confidence,decision_note
+R20250928-184737.WAV,1.0,48.0,,"大家好，我是朱浩，来自湖南。毕业季到了，心中五味杂陈。回想在学校的日子，从第一次踏进校门，到现在即将告别，我们一起哭过、笑过、熬过无数个夜晚。那朗朗的读书声、操场上的奔跑，还有用家乡方言和同学分享心事的时刻，都将成为最珍贵的回忆。
+毕业不是结束，而是新的开始。愿我们带着老师的教诲、同学的友情和家乡的味道，勇敢走向未来。无论走到哪里，都别忘了初心，用最亲切的口音对自己说一句：“加油，你可以的！”
+感谢学校，感谢这段青春。未来，我们一起更好！
+谢谢大家！",greeting,neutral,none,good,,湖南,mandarin,clear,none,acceptable,normal,variable,medium,no,none,no,4,

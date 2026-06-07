@@ -1,0 +1,29 @@
+{
+  "audio_id": "R20250929-001241.WAV",
+  "annotations": [
+    {
+      "start_time": 1.0,
+      "end_time": 50.0,
+      "speaker": "",
+      "transcript": "大家好，我是朱浩，来自湖南。今天想和大家聊聊爱情的美好。爱情就像家乡春天的细雨，悄无声息却滋润心田。遇见那个对的人，你会想用最温柔的家乡方言，对她说“有你在，我的世界都亮了”。\n爱情不是童话里的完美，而是两个人互相理解、一起面对生活的琐碎与风雨。它让我们学会包容，也让我们变得更好。无论年龄多大，都要相信真爱值得等待和珍惜。希望大家都能找到那个让心安、让笑声更多的人，一起书写属于你们的甜蜜故事。\n用最亲切的口音，说出心底的爱吧！\n谢谢大家！",
+      "intent": "greeting",
+      "emotion": "neutral",
+      "noise_type": "none",
+      "quality_flag": "good",
+      "notes": "",
+      "accent_region": "湖南",
+      "dialect_label": "mandarin",
+      "speech_clarity": "clear",
+      "background_noise_level": "none",
+      "recording_quality": "good",
+      "speaking_rate": "normal",
+      "intonation": "variable",
+      "speech_energy": "medium",
+      "disfluency_present": "no",
+      "disfluency_type": "none",
+      "overlap_speech": "no",
+      "annotation_confidence": 4,
+      "decision_note": ""
+    }
+  ]
+}

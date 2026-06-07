@@ -1,0 +1,29 @@
+{
+  "audio_id": "R20250928-183808.WAV",
+  "annotations": [
+    {
+      "start_time": 3.0,
+      "end_time": 48.0,
+      "speaker": "",
+      "transcript": "大家好，我是朱浩，一个地道的老乡。今天想跟大家聊聊坚持的意义。以前我总觉得梦想很遥远，可后来发现，只要每天往前走一小步，时间久了就会看到很大的变化。就像我们家乡的山路，一开始又陡又弯，但走着走着，就到了山顶，看到了最美的风景。\n现在，我还是会经常用家乡话跟家人打电话，那亲切的口音总能给我力量。无论走到哪里，都别忘了自己的根，也要勇敢去追自己想过的生活。\n希望每个人都能找到自己的节奏，不慌不忙，稳稳向前！\n谢谢大家！",
+      "intent": "greeting",
+      "emotion": "neutral",
+      "noise_type": "none",
+      "quality_flag": "good",
+      "notes": "",
+      "accent_region": "middle_mandarin",
+      "dialect_label": "mandarin",
+      "speech_clarity": "clear",
+      "background_noise_level": "none",
+      "recording_quality": "good",
+      "speaking_rate": "normal",
+      "intonation": "variable",
+      "speech_energy": "medium",
+      "disfluency_present": "no",
+      "disfluency_type": "none",
+      "overlap_speech": "no",
+      "annotation_confidence": 4,
+      "decision_note": ""
+    }
+  ]
+}

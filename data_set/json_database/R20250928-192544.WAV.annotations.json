@@ -1,0 +1,29 @@
+{
+  "audio_id": "R20250928-192544.WAV",
+  "annotations": [
+    {
+      "start_time": 1.0,
+      "end_time": 43.0,
+      "speaker": "",
+      "transcript": "大家好，我是朱浩，来自湖南。今天想和大家聊聊习惯的力量。好习惯就像家乡的山间小溪，日复一日 安静流淌，却能滋养整片土地。早起运动、坚持阅读、用方言和家人打电话，这些看似平凡的小事，积累起来就成了我们生活的底色。\n我最珍惜的是每天用家乡话跟自己说一句鼓励的话，那亲切的口音总能让我平静下来，保持积极的心态。培养好习惯并不容易，但一旦坚持，就会发现人生越来越从容。希望大家从今天开始，养成一两个好习惯，用最自在的方言告诉自己：“我能做到！”\n好习惯成就更好的自己。\n谢谢大家！",
+      "intent": "greeting",
+      "emotion": "neutral",
+      "noise_type": "none",
+      "quality_flag": "good",
+      "notes": "",
+      "accent_region": "user_defined",
+      "dialect_label": "mandarin",
+      "speech_clarity": "clear",
+      "background_noise_level": "none",
+      "recording_quality": "acceptable",
+      "speaking_rate": "fast",
+      "intonation": "flat",
+      "speech_energy": "medium",
+      "disfluency_present": "no",
+      "disfluency_type": "none",
+      "overlap_speech": "no",
+      "annotation_confidence": 4,
+      "decision_note": ""
+    }
+  ]
+}

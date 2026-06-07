@@ -1,0 +1,29 @@
+{
+  "audio_id": "R20250928-184406.WAV",
+  "annotations": [
+    {
+      "start_time": 1.0,
+      "end_time": 54.0,
+      "speaker": "",
+      "transcript": "大家好，我是朱浩，来自湖南。今天想和大家聊聊亲情的温暖。亲情就像家乡那碗热腾腾的鸡汤，无论走得多远，一想起来就觉得心里踏实。小时候妈妈用家乡话哄我睡觉，现在我最喜欢的事，就是回家和父母用最亲切的方言聊天，聊聊家常，笑笑从前。父母的爱从来不说出口，却藏在每一顿饭、每一个电话里。无论我们长多大，在他们眼里，我们永远是孩子。珍惜眼前人，多回家陪陪他们，用最真心的口音说一句“爸妈，我爱你们”。\n亲情，是我们一辈子最坚实的依靠。\n谢谢大家！",
+      "intent": "greeting",
+      "emotion": "neutral",
+      "noise_type": "none",
+      "quality_flag": "good",
+      "notes": "",
+      "accent_region": "middle_mandarin",
+      "dialect_label": "mandarin",
+      "speech_clarity": "clear",
+      "background_noise_level": "none",
+      "recording_quality": "good",
+      "speaking_rate": "normal",
+      "intonation": "variable",
+      "speech_energy": "medium",
+      "disfluency_present": "no",
+      "disfluency_type": "none",
+      "overlap_speech": "no",
+      "annotation_confidence": 4,
+      "decision_note": ""
+    }
+  ]
+}

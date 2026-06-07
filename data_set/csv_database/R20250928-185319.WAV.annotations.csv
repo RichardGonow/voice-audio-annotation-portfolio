@@ -1,0 +1,5 @@
+﻿audio_id,start_time,end_time,speaker,transcript,intent,emotion,noise_type,quality_flag,notes,accent_region,dialect_label,speech_clarity,background_noise_level,recording_quality,speaking_rate,intonation,speech_energy,disfluency_present,disfluency_type,overlap_speech,annotation_confidence,decision_note
+R20250928-185319.WAV,1.0,51.0,,"大家好，我是朱浩，来自湖南。今天想和大家聊聊性格的力量。一个人的性格，就像家乡的山水，各有各的模样：有人温柔如水，有人坚韧如山。但最重要的是，做真实的自己，保持那份善良与真诚。
+我喜欢用家乡方言和朋友聊天，那种不加掩饰的直率和温暖，总能让人感到舒服。好的性格不是天生完美，而是不断修炼的结果。它能帮助我们面对困难，温暖身边的人。希望大家都能拥有一颗阳光的心，用最亲切的口音对自己说：“做自己，就很好！”
+性格决定高度，善良成就温度。
+谢谢大家！",greeting,neutral,none,good,,middle_mandarin,邵阳话,mostly_clear,none,good,normal,flat,medium,no,none,no,4,

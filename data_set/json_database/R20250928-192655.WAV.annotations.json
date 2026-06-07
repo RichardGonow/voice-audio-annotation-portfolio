@@ -1,0 +1,29 @@
+{
+  "audio_id": "R20250928-192655.WAV",
+  "annotations": [
+    {
+      "start_time": 1.0,
+      "end_time": 42.0,
+      "speaker": "",
+      "transcript": "大家好，我是朱浩，来自湖南。今天想和大家聊聊地理的奇妙。地理就像一本活地图，记录着大自然的鬼斧神工。我们家乡有巍峨的山脉、清澈的河流，还有那层层叠叠的梯田，每一处风景都诉说着土地的故事。\n我最喜欢在山间小路上，用家乡方言大声呼喊，让声音在山谷间回荡，那种亲切又自由的感觉特别难忘。了解地理不仅让我们欣赏美景，更让我们懂得尊重自然、保护家园。希望大家多去走走看看，用最自在的口音赞美身边的山河：“家乡真美！”\n地理连着我们的根，也连着我们对未来的向往。\n谢谢大家！",
+      "intent": "greeting",
+      "emotion": "neutral",
+      "noise_type": "none",
+      "quality_flag": "good",
+      "notes": "",
+      "accent_region": "user_defined",
+      "dialect_label": "mandarin",
+      "speech_clarity": "clear",
+      "background_noise_level": "none",
+      "recording_quality": "good",
+      "speaking_rate": "fast",
+      "intonation": "rising",
+      "speech_energy": "medium",
+      "disfluency_present": "no",
+      "disfluency_type": "none",
+      "overlap_speech": "no",
+      "annotation_confidence": 4,
+      "decision_note": ""
+    }
+  ]
+}

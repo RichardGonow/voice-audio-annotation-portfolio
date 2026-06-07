@@ -1,0 +1,5 @@
+﻿audio_id,start_time,end_time,speaker,transcript,intent,emotion,noise_type,quality_flag,notes,accent_region,dialect_label,speech_clarity,background_noise_level,recording_quality,speaking_rate,intonation,speech_energy,disfluency_present,disfluency_type,overlap_speech,annotation_confidence,decision_note
+R20250928-192839.WAV,1.0,42.0,,"大家好，我是朱浩，来自湖南。今天想和大家聊聊友谊的珍贵。真正的友谊就像家乡的老酒，时间越久越香醇。它不是天天黏在一起，而是关键时刻总能互相支撑。用家乡方言互相鼓励一句，就能驱散心中的阴霾；开心时一起大笑，那声音特别爽朗。
+我很幸运，一路上有那么多朋友陪伴。我们分享秘密、讨论梦想、一起面对生活。友谊不需要华丽的言语，只需要真心相待。希望大家珍惜身边的知心朋友，多用最亲切的口音对他们说：“有你这个朋友，真好！”
+愿我们的友谊，历经岁月，依然如初。
+谢谢大家！",greeting,neutral,none,good,,user_defined,mandarin,clear,none,good,normal,variable,medium,no,none,no,4,

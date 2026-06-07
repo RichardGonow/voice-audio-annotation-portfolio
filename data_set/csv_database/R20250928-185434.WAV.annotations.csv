@@ -1,0 +1,5 @@
+﻿audio_id,start_time,end_time,speaker,transcript,intent,emotion,noise_type,quality_flag,notes,accent_region,dialect_label,speech_clarity,background_noise_level,recording_quality,speaking_rate,intonation,speech_energy,disfluency_present,disfluency_type,overlap_speech,annotation_confidence,decision_note
+R20250928-185434.WAV,1.0,51.0,,"大家好，我是朱浩，来自湖南。今天想和大家聊聊历史的厚重。历史就像一条长河，流淌着我们家乡的故事。从古老的村落传说，到先辈们用方言记录的那些奋斗与坚持，每一段都值得我们去铭记和敬仰。
+我喜欢听长辈用家乡话讲述老故事，那些带着岁月气息的口音，总能让我感受到文化的根脉和力量。了解历史不是为了怀旧，而是为了更好地把握现在、开创未来。希望大家多去阅读历史、传承历史，用最亲切的方言把这些故事讲给下一代听。
+历史是最好的老师，让我们站在前人的肩膀上，走得更远。
+谢谢大家！",greeting,neutral,none,good,,湖南,mandarin,clear,none,good,normal,flat,medium,no,none,no,3,

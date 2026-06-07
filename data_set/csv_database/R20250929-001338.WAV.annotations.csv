@@ -1,0 +1,5 @@
+﻿audio_id,start_time,end_time,speaker,transcript,intent,emotion,noise_type,quality_flag,notes,accent_region,dialect_label,speech_clarity,background_noise_level,recording_quality,speaking_rate,intonation,speech_energy,disfluency_present,disfluency_type,overlap_speech,annotation_confidence,decision_note
+R20250929-001338.WAV,1.0,51.0,,"大家好，我是朱浩，来自湖南。今天想和大家聊聊家庭和睦的幸福。一家人和和睦睦，是人生最珍贵的财富。就像家乡的老屋，无论外面风雨多大，回家就能感受到温暖。平时多用家乡方言和家人聊天，说说心里话，笑笑生活事，矛盾自然就少了，感情越来越深。
+家庭和睦需要每个人用心经营：多一份理解，少一点争执；多一点陪伴，少一点冷漠。父母的叮嘱、爱人的支持、孩子的笑脸，都是我们最美的风景。希望每一位朋友都能珍惜家人，用最亲切的口音多说一句“我爱这个家”，让家庭永远充满欢笑和温馨。
+家庭和睦，幸福长长久久。
+谢谢大家！",greeting,neutral,none,good,,湖南,mandarin,clear,none,good,normal,flat,medium,no,none,no,4,

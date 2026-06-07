@@ -1,0 +1,29 @@
+{
+  "audio_id": "R20250928-184133.WAV",
+  "annotations": [
+    {
+      "start_time": 1.0,
+      "end_time": 46.0,
+      "speaker": "",
+      "transcript": "大家好，我是朱浩，来自湖南。今天想和大家说说爱情的味道。爱情就像我们家乡的山间小路，看似平凡，却走着走着就甜到了心里。遇见对的人，会让你想用最温柔的家乡话，对她说一句“有你在，真好”。\n无论顺境逆境，我都相信真心相待，就能一起走过风风雨雨。爱情不是轰轰烈烈的电影，而是日常里互相陪伴的温暖。希望大家都能找到那个让心安的人，一起品尝生活的甜蜜。\n谢谢大家！",
+      "intent": "greeting",
+      "emotion": "neutral",
+      "noise_type": "none",
+      "quality_flag": "good",
+      "notes": "",
+      "accent_region": "middle_mandarin",
+      "dialect_label": "mandarin",
+      "speech_clarity": "clear",
+      "background_noise_level": "none",
+      "recording_quality": "good",
+      "speaking_rate": "normal",
+      "intonation": "variable",
+      "speech_energy": "medium",
+      "disfluency_present": "no",
+      "disfluency_type": "none",
+      "overlap_speech": "no",
+      "annotation_confidence": 4,
+      "decision_note": ""
+    }
+  ]
+}

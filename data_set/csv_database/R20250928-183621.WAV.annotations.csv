@@ -1,0 +1,4 @@
+﻿audio_id,start_time,end_time,speaker,transcript,intent,emotion,noise_type,quality_flag,notes,accent_region,dialect_label,speech_clarity,background_noise_level,recording_quality,speaking_rate,intonation,speech_energy,disfluency_present,disfluency_type,overlap_speech,annotation_confidence,decision_note
+R20250928-183621.WAV,1.0,51.0,,"大家好，我是来自湖南的朱浩。今天，我想和大家分享一下我最近的生活感悟。生活就像一场旅行，有时候风平浪静，有时候也会遇到小波折。但无论怎样，我都相信，只要保持一颗热爱的心，坚持去做自己喜欢的事情，总能找到属于自己的那片晴天。
+我喜欢在闲暇的时候，泡一杯热茶，听听家乡的方言老歌，或者和朋友们用最亲切的口音聊天。那种熟悉的感觉，总能让我感到温暖和踏实。希望大家也能在忙碌中，找到属于自己的小确幸，用心去感受生活的美好。
+谢谢大家！",greeting,neutral,none,good,,middle_mandarin,mandarin,clear,none,good,normal,variable,medium,no,none,no,4,

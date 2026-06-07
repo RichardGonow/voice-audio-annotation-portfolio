@@ -1,0 +1,29 @@
+{
+  "audio_id": "R20250928-184617.WAV",
+  "annotations": [
+    {
+      "start_time": 1.0,
+      "end_time": 52.0,
+      "speaker": "",
+      "transcript": "大家好，我是朱浩，来自湖南。今天想和大家聊聊学校的那些日子。学校就像我们成长的第二个家，教室里朗朗的读书声，操场上欢快的笑闹，还有和同学们用家乡方言偷偷聊天的小秘密，都成了最美好的回忆。\n那时候我们一起背书、一起考试、一起为梦想奋斗。虽然偶尔会抱怨作业多，但现在想来，正是那些日子教会我们坚持和友情。希望正在学校的朋友们珍惜当下，好好学习，也多用最亲切的口音和同学分享快乐。\n学校时光短暂，却是我们一生最纯真的岁月。\n谢谢大家！",
+      "intent": "greeting",
+      "emotion": "neutral",
+      "noise_type": "none",
+      "quality_flag": "good",
+      "notes": "",
+      "accent_region": "middle_mandarin",
+      "dialect_label": "mandarin",
+      "speech_clarity": "partially_unclear",
+      "background_noise_level": "none",
+      "recording_quality": "poor",
+      "speaking_rate": "normal",
+      "intonation": "variable",
+      "speech_energy": "medium",
+      "disfluency_present": "no",
+      "disfluency_type": "none",
+      "overlap_speech": "no",
+      "annotation_confidence": 4,
+      "decision_note": ""
+    }
+  ]
+}

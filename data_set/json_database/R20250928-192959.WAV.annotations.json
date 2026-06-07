@@ -1,0 +1,29 @@
+{
+  "audio_id": "R20250928-192959.WAV",
+  "annotations": [
+    {
+      "start_time": 1.0,
+      "end_time": 47.0,
+      "speaker": "",
+      "transcript": "大家好，我是朱浩，来自湖南。今天想和大家聊聊农业的厚重与美好。农业是我们的根，家乡的田野里，农民伯伯用勤劳的双手，种出了香喷喷的稻米、鲜嫩的蔬菜和甜蜜的水果。每一粒粮食，都饱含着汗水和希望。\n我喜欢回乡时，用家乡方言和长辈们聊农事，听他们讲今年的收成，那亲切的口音里满是踏实和满足。农业不仅养育了我们，更教会我们尊重自然、珍惜劳动。希望更多人关注农业、支持农民，让“ grain满仓”的美好生活，代代延续下去。\n劳动最光荣，农业最伟大！\n谢谢大家！",
+      "intent": "greeting",
+      "emotion": "neutral",
+      "noise_type": "none",
+      "quality_flag": "good",
+      "notes": "",
+      "accent_region": "user_defined",
+      "dialect_label": "mandarin",
+      "speech_clarity": "clear",
+      "background_noise_level": "none",
+      "recording_quality": "good",
+      "speaking_rate": "normal",
+      "intonation": "flat",
+      "speech_energy": "medium",
+      "disfluency_present": "no",
+      "disfluency_type": "none",
+      "overlap_speech": "no",
+      "annotation_confidence": 4,
+      "decision_note": ""
+    }
+  ]
+}

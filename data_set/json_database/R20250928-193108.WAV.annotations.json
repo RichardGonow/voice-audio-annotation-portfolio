@@ -1,0 +1,29 @@
+{
+  "audio_id": "R20250928-193108.WAV",
+  "annotations": [
+    {
+      "start_time": 1.0,
+      "end_time": 46.0,
+      "speaker": "",
+      "transcript": "大家好，我是朱浩，来自湖南。今天想和大家聊聊工作的意义。工作不仅仅是为了养家糊口，更是我们实现价值、磨炼自我的舞台。每天踏实努力，用专业和热情去完成每一项任务，就像家乡的农民在田里耕耘一样，总会收获属于自己的果实。\n我最喜欢忙碌一天后，用家乡方言和家人分享工作的点滴，那亲切的口音总能带来放松和力量。无论工作多难，都要保持积极的心态，相信付出终有回报。希望大家在自己的岗位上，都能找到成就感和快乐，稳稳地向前走。\n工作，让生活更有意义！\n谢谢大家！",
+      "intent": "greeting",
+      "emotion": "neutral",
+      "noise_type": "none",
+      "quality_flag": "good",
+      "notes": "",
+      "accent_region": "湖南",
+      "dialect_label": "mandarin",
+      "speech_clarity": "clear",
+      "background_noise_level": "none",
+      "recording_quality": "good",
+      "speaking_rate": "normal",
+      "intonation": "variable",
+      "speech_energy": "medium",
+      "disfluency_present": "no",
+      "disfluency_type": "none",
+      "overlap_speech": "no",
+      "annotation_confidence": 4,
+      "decision_note": ""
+    }
+  ]
+}
