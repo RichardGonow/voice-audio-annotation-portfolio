@@ -172,6 +172,8 @@ File naming format:
 
 The `data_set` directory is located automatically at startup using path resolution from `app/main.py`. If the directory does not exist, it is created automatically.
 
+> **Note:** `data_set/` is stored **outside** the application repository (one level above the app root) and is not committed to git. It is created automatically on first save. If you clone this repository, run the app and save an annotation to generate the directory.
+
 If a file with the same name already exists, it is overwritten and the UI displays: `Existing file overwritten.`
 
 ---
@@ -281,6 +283,22 @@ The schema is also defined as JSON Schema draft-07 at `data/schema/annotation_sc
 
 ---
 
+## Screenshots
+
+### Main Annotation Interface
+
+![Main Annotation Interface](docs/images/main_ui.png)
+
+### JSON Output
+
+![JSON Output](docs/images/json_output.png)
+
+### QA Report
+
+![QA Report](docs/images/qa_report.png)
+
+---
+
 ## Tech Stack
 
 - Python 3.10+
@@ -289,7 +307,3 @@ The schema is also defined as JSON Schema draft-07 at `data/schema/annotation_sc
 
 > **Note:** `examples/sample_annotation.json` contains one intentional format error
 > (`"speaker": "speaker1"` instead of `"SPEAKER_02"`) to demonstrate QA detection capability.
-=======
-# voice-audio-annotation-portfolio
-Portfolio-grade speech/audio annotation tool built with Python and Streamlit.
->>>>>>> 8d52933b66f8013cbaa35dcebfeba5bbb90f7f91
