@@ -4,7 +4,8 @@ Usage:
   python qa_report.py <file.json>                            # single file
   python qa_report.py <directory/>                           # all .json files in directory
   python qa_report.py <path> --markdown <output.md>          # also write Markdown report
-Exit 0 = all checks passed; Exit 1 = errors found.
+Exit 0 = all checks passed (errors=0); Exit 1 = errors found.
+Warnings do not affect the exit code.
 """
 
 import json
@@ -22,8 +23,14 @@ def check_file(path: Path) -> dict:
         data = json.load(f)
     audio_id = data.get("audio_id", path.name)
     annotations = data.get("annotations", [])
-    errors = validate_annotations(annotations)
-    return {"path": path, "audio_id": audio_id, "total": len(annotations), "errors": errors}
+    result = validate_annotations(annotations)
+    return {
+        "path": path,
+        "audio_id": audio_id,
+        "total": len(annotations),
+        "errors": result["errors"],
+        "warnings": result["warnings"],
+    }
 
 
 def print_file_result(result: dict) -> None:
@@ -31,19 +38,23 @@ def print_file_result(result: dict) -> None:
     print(f"audio_id: {result['audio_id']}")
     print(f"Total annotations: {result['total']}")
     print(f"Errors: {len(result['errors'])}")
-    if result["errors"]:
-        for e in result["errors"]:
-            print(f"  [ERROR] annotation #{e['index']} - {e['field']}: {e['message']}")
-    else:
-        print("  QA Passed.")
+    print(f"Warnings: {len(result['warnings'])}")
+    for e in result["errors"]:
+        print(f"  [ERROR] annotation #{e['index']} - {e['field']}: {e['message']}")
+    for w in result["warnings"]:
+        print(f"  [WARNING] annotation #{w['index']} - {w['field']}: {w['message']}")
+    if not result["errors"] and not result["warnings"]:
+        print("  QA Passed. No validation errors or warnings found.")
     print()
 
 
 def render_markdown(results: list, target: Path) -> str:
-    passed = [r for r in results if not r["errors"]]
-    failed = [r for r in results if r["errors"]]
+    clean = [r for r in results if not r["errors"] and not r["warnings"]]
+    with_errors = [r for r in results if r["errors"]]
+    with_warnings = [r for r in results if r["warnings"]]
     total_annotations = sum(r["total"] for r in results)
     total_errors = sum(len(r["errors"]) for r in results)
+    total_warnings = sum(len(r["warnings"]) for r in results)
     generated_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     lines = [
@@ -57,27 +68,48 @@ def render_markdown(results: list, target: Path) -> str:
         "| Metric | Value |",
         "|--------|-------|",
         f"| Total files | {len(results)} |",
-        f"| Passed files | {len(passed)} |",
-        f"| Files with errors | {len(failed)} |",
+        f"| Clean files (no errors or warnings) | {len(clean)} |",
+        f"| Files with errors | {len(with_errors)} |",
+        f"| Files with warnings | {len(with_warnings)} |",
         f"| Total annotations | {total_annotations} |",
         f"| Total errors | {total_errors} |",
+        f"| Total warnings | {total_warnings} |",
         "",
         "## Results by File",
         "",
     ]
 
     for r in results:
-        status = "PASS" if not r["errors"] else f"FAIL ({len(r['errors'])} error(s))"
+        if r["errors"]:
+            status = f"FAIL ({len(r['errors'])} error(s))"
+        elif r["warnings"]:
+            status = f"WARN ({len(r['warnings'])} warning(s))"
+        else:
+            status = "PASS"
+
         lines.append(f"### `{r['path'].name}` — {status}")
         lines.append("")
         lines.append(f"- audio_id: `{r['audio_id']}`")
         lines.append(f"- Annotations: {r['total']}")
+
         if r["errors"]:
+            lines.append("")
+            lines.append("**Errors**")
             lines.append("")
             lines.append("| # | Field | Message |")
             lines.append("|---|-------|---------|")
             for e in r["errors"]:
                 lines.append(f"| {e['index']} | `{e['field']}` | {e['message']} |")
+
+        if r["warnings"]:
+            lines.append("")
+            lines.append("**Warnings**")
+            lines.append("")
+            lines.append("| # | Field | Message |")
+            lines.append("|---|-------|---------|")
+            for w in r["warnings"]:
+                lines.append(f"| {w['index']} | `{w['field']}` | {w['message']} |")
+
         lines.append("")
 
     return "\n".join(lines)
@@ -107,27 +139,30 @@ def run_directory(dirpath: Path, markdown_out: Path) -> int:
     for f in files:
         try:
             results.append(check_file(f))
-        except Exception as e:
-            print(f"Warning: could not process {f.name}: {e}", file=sys.stderr)
+        except Exception as ex:
+            print(f"Warning: could not process {f.name}: {ex}", file=sys.stderr)
 
-    passed = [r for r in results if not r["errors"]]
-    failed = [r for r in results if r["errors"]]
+    with_errors = [r for r in results if r["errors"]]
+    with_warnings = [r for r in results if r["warnings"]]
     total_annotations = sum(r["total"] for r in results)
     total_errors = sum(len(r["errors"]) for r in results)
+    total_warnings = sum(len(r["warnings"]) for r in results)
 
     print("Voice Annotation Batch QA Report")
     print("=================================")
     print()
     print(f"Directory:             {dirpath}")
     print(f"Total files:           {len(results)}")
-    print(f"Passed files:          {len(passed)}")
-    print(f"Files with errors:     {len(failed)}")
+    print(f"Files with errors:     {len(with_errors)}")
+    print(f"Files with warnings:   {len(with_warnings)}")
     print(f"Total annotations:     {total_annotations}")
     print(f"Total errors:          {total_errors}")
+    print(f"Total warnings:        {total_warnings}")
     print()
 
-    for r in failed:
-        print_file_result(r)
+    for r in results:
+        if r["errors"] or r["warnings"]:
+            print_file_result(r)
 
     if markdown_out:
         md = render_markdown(results, dirpath)
@@ -135,7 +170,7 @@ def run_directory(dirpath: Path, markdown_out: Path) -> int:
         markdown_out.write_text(md, encoding="utf-8")
         print(f"Markdown report written to {markdown_out}")
 
-    return 1 if failed else 0
+    return 1 if with_errors else 0
 
 
 def main():
@@ -161,8 +196,13 @@ def main():
 
     target = Path(positional[0])
     if not target.exists():
-        print(f"Error: not found — {target}")
-        sys.exit(1)
+        # data_set/ lives one level above this script (outer project root)
+        candidate = Path(__file__).resolve().parent.parent / positional[0]
+        if candidate.exists():
+            target = candidate
+        else:
+            print(f"Error: not found — {target}")
+            sys.exit(1)
 
     if target.is_dir():
         sys.exit(run_directory(target, markdown_out))

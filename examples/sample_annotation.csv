@@ -1,4 +1,4 @@
-audio_id,start_time,end_time,speaker,transcript,intent,emotion,noise_type,quality_flag,notes
-sample_001.wav,0.5,3.2,SPEAKER_01,你好，我想查询一下我的订单状态。,question,neutral,none,good,
-sample_001.wav,3.5,6.8,speaker1,好的，请提供您的订单号。,request,neutral,none,good,INTENTIONAL ERROR: speaker should be SPEAKER_02. Included to demonstrate qa_report.py detection.
-sample_001.wav,7.0,10.5,SPEAKER_01,我的订单号是 1234567890，请帮我查一下。,confirmation,neutral,background_noise,fair,Slight background noise audible throughout segment.
+audio_id,start_time,end_time,speaker,transcript,intent,emotion,noise_type,quality_flag,notes,accent_region,dialect_label,speech_clarity,background_noise_level,recording_quality,speaking_rate,intonation,speech_energy,disfluency_present,disfluency_type,overlap_speech,annotation_confidence,decision_note
+sample_001.wav,0.5,3.2,SPEAKER_01,你好，我想查询一下我的订单状态。,question,neutral,none,good,,standard_mandarin,mandarin,clear,none,good,normal,rising,medium,no,none,no,5,
+sample_001.wav,3.5,6.8,speaker1,好的，请提供您的订单号。,request,neutral,none,good,"INTENTIONAL ERROR: speaker should be SPEAKER_02. Included to demonstrate qa_report.py detection.",standard_mandarin,mandarin,clear,none,good,normal,flat,medium,no,none,no,5,
+sample_001.wav,7.0,10.5,SPEAKER_01,我的订单号是 1234567890，请帮我查一下。,confirmation,neutral,background_noise,fair,Slight background noise audible throughout segment.,standard_mandarin,mandarin,mostly_clear,low,acceptable,normal,falling,medium,no,none,no,4,Background noise slightly affects clarity but transcript is recoverable.

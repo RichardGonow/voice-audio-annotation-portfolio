@@ -30,14 +30,13 @@ This dataset consists of audio files uploaded and annotated by the user through 
 
 ## Data Scale
 
-Scale varies by user. The tool supports annotation of any number of audio files stored in `data/annotations/`. The `reports/annotation_summary.py` script provides current counts at any time.
-
-| Metric | Notes |
+| Metric | Value |
 |--------|-------|
-| Files | One JSON file per audio clip |
-| Segments per file | Typically 2–20 per audio clip |
-| Segment duration | Typically 1–30 seconds each |
-| Total annotated duration | Depends on user's annotation session |
+| Total audio files | 21 |
+| Total annotations | 21 |
+| Total duration | ~19 minutes |
+| Primary language | Mandarin Chinese |
+| Audio source | Self-recorded speech |
 
 ---
 
@@ -55,6 +54,19 @@ Scale varies by user. The tool supports annotation of any number of audio files 
 | `noise_type` | enum | Type of background interference |
 | `quality_flag` | enum | Overall audio quality assessment |
 | `notes` | string | Optional free-text annotator comments |
+| `accent_region` | enum | Regional accent label (9 values) |
+| `dialect_label` | enum | Language/dialect variety (10 values) |
+| `speech_clarity` | enum | Intelligibility assessment (4 values) |
+| `background_noise_level` | enum | Noise intensity (4 values) |
+| `recording_quality` | enum | Technical recording quality (5 values) |
+| `speaking_rate` | enum | Pace of speech (4 values) |
+| `intonation` | enum | Pitch pattern (5 values) |
+| `speech_energy` | enum | Vocal effort level (4 values) |
+| `disfluency_present` | enum | Whether disfluency is present (`yes` / `no`) |
+| `disfluency_type` | string | Comma-separated disfluency types |
+| `overlap_speech` | enum | Whether simultaneous speech occurs (`yes` / `no`) |
+| `annotation_confidence` | integer | Annotator confidence score (1–5) |
+| `decision_note` | string | Free-text reasoning for ambiguous decisions |
 
 ### Allowed Values
 
@@ -78,6 +90,14 @@ This annotation format is designed to support:
 - **Speaker diarization QA** — speaker ID with structured format
 - **Audio quality filtering** — `quality_flag` for dataset cleaning pipelines
 - **Noise robustness research** — `noise_type` for conditioning models on acoustic conditions
+- **Accent annotation** — regional accent labeling for Mandarin speech varieties
+- **Dialect annotation** — language/dialect classification across Chinese speech varieties
+- **Audio QA** — structured quality assessment at segment level
+- **Speech quality evaluation** — clarity, noise level, and recording quality scoring
+- **Prosody annotation** — speaking rate, intonation, and speech energy labeling
+- **Disfluency annotation** — detection and classification of speech disfluencies
+- **Human annotation workflows** — demonstrates a complete professional annotation lifecycle
+- **AI training data curation** — confidence scoring and decision notes for data quality operations
 
 ---
 
@@ -99,6 +119,35 @@ This annotation format is designed to support:
 
 ---
 
+## Portfolio Context
+
+This dataset was created as part of the Voice / Audio Annotation Portfolio project.
+
+The project demonstrates:
+
+- Audio annotation workflows
+- Speech data labeling
+- Annotation quality assurance
+- Structured schema design
+- Documentation and QA processes
+
+Target roles:
+
+- AI Data Annotator
+- Audio Annotation Specialist
+- Speech Data Labeler
+- AI Trainer
+- Data Quality Operations
+
+---
+
 ## Annotation Guidelines
 
 See `docs/labeling_guideline.md` for the full annotator reference guide and `docs/edge_cases.md` for handling ambiguous scenarios.
+
+---
+
+## Related Documents
+
+- `docs/labeling_guideline.md`
+- `docs/annotation_decision_log.md`

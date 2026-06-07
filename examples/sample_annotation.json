@@ -10,7 +10,20 @@
       "emotion": "neutral",
       "noise_type": "none",
       "quality_flag": "good",
-      "notes": ""
+      "notes": "",
+      "accent_region": "standard_mandarin",
+      "dialect_label": "mandarin",
+      "speech_clarity": "clear",
+      "background_noise_level": "none",
+      "recording_quality": "good",
+      "speaking_rate": "normal",
+      "intonation": "rising",
+      "speech_energy": "medium",
+      "disfluency_present": "no",
+      "disfluency_type": "none",
+      "overlap_speech": "no",
+      "annotation_confidence": 5,
+      "decision_note": ""
     },
     {
       "start_time": 3.5,
@@ -21,7 +34,20 @@
       "emotion": "neutral",
       "noise_type": "none",
       "quality_flag": "good",
-      "notes": "INTENTIONAL ERROR: speaker should be SPEAKER_02. Included to demonstrate qa_report.py detection."
+      "notes": "INTENTIONAL ERROR: speaker should be SPEAKER_02. Included to demonstrate qa_report.py detection.",
+      "accent_region": "standard_mandarin",
+      "dialect_label": "mandarin",
+      "speech_clarity": "clear",
+      "background_noise_level": "none",
+      "recording_quality": "good",
+      "speaking_rate": "normal",
+      "intonation": "flat",
+      "speech_energy": "medium",
+      "disfluency_present": "no",
+      "disfluency_type": "none",
+      "overlap_speech": "no",
+      "annotation_confidence": 5,
+      "decision_note": ""
     },
     {
       "start_time": 7.0,
@@ -32,7 +58,20 @@
       "emotion": "neutral",
       "noise_type": "background_noise",
       "quality_flag": "fair",
-      "notes": "Slight background noise audible throughout segment."
+      "notes": "Slight background noise audible throughout segment.",
+      "accent_region": "standard_mandarin",
+      "dialect_label": "mandarin",
+      "speech_clarity": "mostly_clear",
+      "background_noise_level": "low",
+      "recording_quality": "acceptable",
+      "speaking_rate": "normal",
+      "intonation": "falling",
+      "speech_energy": "medium",
+      "disfluency_present": "no",
+      "disfluency_type": "none",
+      "overlap_speech": "no",
+      "annotation_confidence": 4,
+      "decision_note": "Background noise slightly affects clarity but transcript is recoverable."
     }
   ]
 }

@@ -28,37 +28,37 @@
         "start_time": {
           "type": "number",
           "minimum": 0,
-          "description": "Segment start time in seconds (2 decimal places). Must be < end_time."
+          "description": "Segment start time in seconds. Must be < end_time."
         },
         "end_time": {
           "type": "number",
           "minimum": 0,
-          "description": "Segment end time in seconds (2 decimal places). Must be > start_time."
+          "description": "Segment end time in seconds. Must be > start_time."
         },
         "speaker": {
           "type": "string",
           "pattern": "^SPEAKER_\\d{2}$",
-          "description": "Speaker identifier. Format: SPEAKER_XX where XX is a zero-padded two-digit number (e.g. SPEAKER_01)."
+          "description": "Speaker identifier. Format: SPEAKER_XX (e.g. SPEAKER_01)."
         },
         "transcript": {
           "type": "string",
           "minLength": 1,
-          "description": "Verbatim transcription of the spoken content. Must not be empty. Use [INAUDIBLE] for unintelligible speech."
+          "description": "Verbatim transcription. Use [inaudible] for unintelligible speech."
         },
         "intent": {
           "type": "string",
           "enum": ["greeting", "question", "request", "complaint", "confirmation", "small_talk", "other"],
-          "description": "Communicative intent of the utterance. Choose the most dominant intent."
+          "description": "Communicative intent of the utterance."
         },
         "emotion": {
           "type": "string",
           "enum": ["neutral", "happy", "angry", "sad", "anxious", "confused", "other"],
-          "description": "Perceived emotional tone of the speaker (not the topic). Default to neutral when ambiguous."
+          "description": "Perceived emotional tone of the speaker."
         },
         "noise_type": {
           "type": "string",
           "enum": ["none", "background_noise", "music", "overlapping_speech", "low_volume", "unclear", "other"],
-          "description": "Dominant background noise type during this segment. Use 'none' for clean recordings."
+          "description": "Dominant background noise type during this segment."
         },
         "quality_flag": {
           "type": "string",
@@ -67,7 +67,81 @@
         },
         "notes": {
           "type": "string",
-          "description": "Optional free-text for annotator comments, edge cases, or ambiguities."
+          "description": "Optional free-text annotator comments."
+        },
+        "accent_region": {
+          "type": "string",
+          "enum": [
+            "standard_mandarin", "northern_mandarin", "northeastern_mandarin",
+            "middle_mandarin", "southwestern_mandarin", "cantonese_accent",
+            "taiwan_mandarin", "singapore_mandarin", "mixed_accent",
+            "unknown", "user_defined"
+          ],
+          "description": "Speaker accent or regional speech variety. Use 'user_defined' with a free-text value for minority or unlisted accents."
+        },
+        "dialect_label": {
+          "type": "string",
+          "enum": [
+            "mandarin", "cantonese", "hokkien", "hakka", "shanghainese_wu",
+            "sichuanese", "taiwanese_mandarin", "singapore_mandarin", "mixed",
+            "unknown", "user_defined"
+          ],
+          "description": "Language variety or dialect used in the segment. Use 'user_defined' with a free-text value for minority or unlisted dialects."
+        },
+        "speech_clarity": {
+          "type": "string",
+          "enum": ["clear", "mostly_clear", "partially_unclear", "unclear"],
+          "description": "Perceived intelligibility of the speech."
+        },
+        "background_noise_level": {
+          "type": "string",
+          "enum": ["none", "low", "medium", "high"],
+          "description": "Subjective intensity of background noise."
+        },
+        "recording_quality": {
+          "type": "string",
+          "enum": ["studio", "good", "acceptable", "poor", "unusable"],
+          "description": "Overall technical quality of the recording."
+        },
+        "speaking_rate": {
+          "type": "string",
+          "enum": ["slow", "normal", "fast", "variable"],
+          "description": "Perceived speaking speed."
+        },
+        "intonation": {
+          "type": "string",
+          "enum": ["flat", "rising", "falling", "expressive", "variable"],
+          "description": "Dominant intonation pattern."
+        },
+        "speech_energy": {
+          "type": "string",
+          "enum": ["low", "medium", "high", "variable"],
+          "description": "Perceived loudness or vocal effort."
+        },
+        "disfluency_present": {
+          "type": "string",
+          "enum": ["yes", "no"],
+          "description": "Whether any speech disfluency is present."
+        },
+        "disfluency_type": {
+          "type": "string",
+          "description": "Comma-separated list of disfluency types (e.g. 'filler,repetition'). Use 'none' if absent.",
+          "examples": ["none", "filler", "filler,repetition", "self_correction,false_start"]
+        },
+        "overlap_speech": {
+          "type": "string",
+          "enum": ["yes", "no"],
+          "description": "Whether another speaker is talking simultaneously."
+        },
+        "annotation_confidence": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "description": "Annotator confidence score: 1 = very uncertain, 5 = fully confident."
+        },
+        "decision_note": {
+          "type": "string",
+          "description": "Free-text explanation for ambiguous labeling decisions."
         }
       },
       "additionalProperties": false
